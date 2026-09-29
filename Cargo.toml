@@ -18,7 +18,7 @@ anyhow = "1"
 arc-swap = "1"
 async-trait = "0.1"
 atty = "0.2"
-base64 = "0.22"
+base64 = "0.23"
 blake3 = "1"
 chrono = "0.4"
 ci_info = "0.14"
@@ -31,7 +31,7 @@ dirs = "6"
 futures = "0.3"
 indexmap = { version = "2", features = ["serde"] }
 miette = { version = "7", features = ["fancy"] }
-miniz_oxide = "0.8"
+miniz_oxide = "0.9"
 regex = "1"
 rmp-serde = "1"
 schemars = { version = "1", features = ["indexmap2"] }
@@ -41,41 +41,41 @@ serde_spanned = "1"
 serde_yaml = "0.9"
 shellexpand = "3"
 strsim = "0.11"
-strum = { version = "0.27", features = ["derive"] }
-tabled = {version = "0.20", features = ["ansi"]}
+strum = { version = "0.28", features = ["derive"] }
+tabled = {version = "0.22", features = ["ansi"]}
 tempfile = "3"
 terminal_size = "0.4"
 thiserror = "2"
 tokio = { version = "1", features = ["full"] }
-toml_edit = { version = "0.22", features = ["serde"] }
+toml_edit = { version = "0.25", features = ["serde"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 walkdir = "2"
 which = "7"
 
 # TUI dependencies
-ratatui = "0.29"
+ratatui = "0.30"
 crossterm = { version = "0.29", features = ["event-stream"] }
 arboard = "3"
 
 # HTTP client for providers without SDKs or native CLIs
-reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json"] }
+reqwest = { version = "0.13", default-features = false, features = ["rustls-tls", "json"] }
 urlencoding = "2.1"
 
 # Provider dependencies
-age = { version = "0.11", features = ["ssh"] }
+age = { version = "0.12", features = ["ssh"] }
 aws-config = { version = "1", features = ["sso", "credentials-process", "credentials-login"] }
 aws-sdk-kms = { version = "1" }
 aws-sdk-secretsmanager = { version = "1" }
 aws-sdk-ssm = { version = "1" }
-azure_core = { version = "0.30" }
-azure_identity = { version = "0.30" }
-azure_security_keyvault_keys = { version = "0.9" }
-azure_security_keyvault_secrets = { version = "0.9" }
+azure_core = { version = "0.35" }
+azure_identity = { version = "0.35" }
+azure_security_keyvault_keys = { version = "0.14" }
+azure_security_keyvault_secrets = { version = "0.14" }
 google-cloud-kms = { version = "0.6" }
 google-cloud-secretmanager-v1 = { version = "1.1" }
 gcp_auth = { version = "0.12" }
-keepass = { version = "0.8", features = ["save_kdbx4"] }
+keepass = { version = "0.15", features = ["save_kdbx4"] }
 keyring = { version = "3", features = ["apple-native", "windows-native", "sync-secret-service"] }
 # Required for rustls crypto provider (used by GCP SDKs)
 rustls = { version = "0.23", default-features = false, features = ["aws-lc-rs", "std"] }
@@ -96,4 +96,4 @@ indexmap = { version = "2", features = ["serde"] }
 proc-macro2 = "1"
 quote = "1"
 serde = { version = "1", features = ["derive"] }
-toml_edit = { version = "0.22", features = ["serde"] }
+toml_edit = { version = "0.25", features = ["serde"] }
