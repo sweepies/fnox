@@ -1640,13 +1640,14 @@ dependencies = [
 
 [[package]]
 name = "demand"
-version = "1.8.2"
+version = "2.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "907231cc77f104ad0777b4c06370cc1513e0f1181983dc617059630e6b79f36f"
+checksum = "98864c9027938dbcc4fcca6073d8f7e49a8bd7a10183a8652201e6e9ea0cea7f"
 dependencies = [
  "console",
  "fuzzy-matcher",
- "itertools 0.14.0",
+ "itertools 0.15.0",
+ "libc",
  "signal-hook 0.4.3",
  "termcolor",
 ]
@@ -3344,6 +3345,15 @@ name = "itertools"
 version = "0.14.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b192c782037fadd9cfa75548310488aabdbf3d2da73885b31bd0abd03351285"
+dependencies = [
+ "either",
+]
+
+[[package]]
+name = "itertools"
+version = "0.15.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8b4baf93f58d4425749ca49a51c50ebab072c5df6994d08fed93541c331481dc"
 dependencies = [
  "either",
 ]
