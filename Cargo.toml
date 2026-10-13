@@ -27,7 +27,7 @@ console = "0.16"
 data-encoding = "2"
 demand = "1"
 usage-lib = { version = "2", features = ["clap"] }
-dirs = "6"
+dirs = "7"
 futures = "0.3"
 indexmap = { version = "2", features = ["serde"] }
 miette = { version = "7", features = ["fancy"] }
